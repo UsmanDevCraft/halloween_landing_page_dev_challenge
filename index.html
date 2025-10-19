@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Midnight Manor - Enter If You Dare</title>
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class="stars" id="stars"></div>
+        <div class="fog"></div>
+    </div>
+
+    <header>
+        <div class="logo">MIDNIGHT MANOR</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#tickets">Tickets</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="pumpkin">🎃</div>
+        <h1>THE MIDNIGHT MANOR</h1>
+        <p class="tagline">WHERE NIGHTMARES COME TO LIFE</p>
+        <button class="cta-button" onclick="scrollToTickets()">Enter If You Dare</button>
+    </section>
+
+    <section class="features" id="about">
+        <h2 class="section-title">What Awaits Inside</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">👻</span>
+                <h3>Haunted Halls</h3>
+                <p>Navigate through 13 rooms of pure terror, each more terrifying than the last. Professional actors
+                    bring your worst nightmares to life.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🕷️</span>
+                <h3>Interactive Scares</h3>
+                <p>This isn't just a walk-through. Make choices that determine your path and face the consequences in
+                    this immersive horror experience.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🦇</span>
+                <h3>Escape Rooms</h3>
+                <p>Solve puzzles while being hunted. Can you escape the manor before midnight strikes? Only 23% of
+                    visitors make it out.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <h2 class="section-title">The Ultimate Halloween Experience</h2>
+        <div class="experience-content">
+            <p>Step into The Midnight Manor, where Victorian elegance meets supernatural horror. Our 40,000 square foot
+                mansion has been transformed into the most immersive haunted experience in the world.</p>
+            <p>Using cutting-edge special effects, Hollywood-level set design, and trained actors, we've created an
+                environment where the line between reality and nightmare blurs.</p>
+        </div>
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-number">13</span>
+                <span class="stat-label">Terrifying Rooms</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">45</span>
+                <span class="stat-label">Minutes of Horror</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Live Actors</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2 class="section-title">Survivor Stories</h2>
+        <div class="testimonial-card">
+            <p class="testimonial-text">"I've been to haunted houses across the country, but nothing prepared me for The
+                Midnight Manor. I actually had to tap out halfway through. Absolutely terrifying!"</p>
+            <p class="testimonial-author">— Sarah M., Brooklyn</p>
+        </div>
+        <div class="testimonial-card">
+            <p class="testimonial-text">"The attention to detail is insane. Every sound, every shadow, every creaking
+                floorboard is designed to mess with your head. Best Halloween experience ever!"</p>
+            <p class="testimonial-author">— Marcus T., Chicago</p>
+        </div>
+        <div class="testimonial-card">
+            <p class="testimonial-text">"I brought my friends who claimed nothing scares them. They were screaming
+                within the first five minutes. The actors are phenomenal and relentless."</p>
+            <p class="testimonial-author">— Jessica L., Austin</p>
+        </div>
+    </section>
+
+    <section class="final-cta" id="tickets">
+        <h2>Ready to Face Your Fears?</h2>
+        <p>Limited slots available. Each night sells out. Don't miss your chance to experience the terror.</p>
+        <button class="cta-button" onclick="openBookingModal()">Book Your Nightmare</button>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeBookingModal()">✖</span>
+            <h2>Book Your Nightmare</h2>
+            <p>🎃 Dare to enter The Midnight Manor? Secure your slot now!</p>
+            <p>This is a demo landing page. In a real implementation, this form would connect to a ticket booking
+                platform.</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="date" required>
+                <button type="submit" class="modal-submit">Reserve Your Spot</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The Midnight Manor. All Rights Reserved. Enter at your own risk.</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Warning: Intense strobe lighting, fog effects, and extreme
+            scares. Not recommended for children under 13 or those with heart conditions.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
